@@ -43,7 +43,7 @@ JScrollPane scrolltextarea;
 
 public VerdatosEmple(JFrame f )
 {  
-	//NUMfact = Short.parseShort(num.getText()); // el número de factura
+	//NUMfact = Short.parseShort(num.getText()); // el nï¿½mero de factura
 	setTitle("DATOS DE EMPLEADOS.");
 	setModal(true);
     JPanel p0 = new JPanel();c = Color.CYAN;
@@ -56,7 +56,7 @@ public VerdatosEmple(JFrame f )
 	JPanel p41 = new JPanel(); p41.setLayout (new FlowLayout());
   	//area de texto
 	ta = new JTextArea("", 14, 85);
-	ta.setLineWrap(false); // AJUSTAR LAS LÍNEASS
+	ta.setLineWrap(false); // AJUSTAR LAS Lï¿½NEASS
 	scrolltextarea = new JScrollPane(ta);
 	scrolltextarea.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 	
@@ -121,7 +121,7 @@ public void imprimirempleados() {
 	    documento.open();  
 		documento.add(new Paragraph("DATOS DE LA TABLA EMPLEADOS."));
 		documento.add(new Paragraph("---------------------------------------------------------"));
-		// ahora el text área completo
+		// ahora el text ï¿½rea completo
 		documento.add(new Paragraph(ta.getText(), FontFactory.getFont("Courier",  9, Font.ITALIC,                   // estilo
 				BaseColor.BLACK)));
 		mensaje.setText("......LISTADO GENERADO.....");   
@@ -174,7 +174,7 @@ private void verempleados() {
 		     System.out.println ("Estado:" + e.getSQLState());
 		     //e.printStackTrace();
 		 	 if (e.getErrorCode()==17002)
-		        mensaje.setText("Error NO SE PUEDE ESTABLECER CONEXIÓN CON LA BD. Revisa la conexión.");   
+		        mensaje.setText("Error NO SE PUEDE ESTABLECER CONEXIï¿½N CON LA BD. Revisa la conexiï¿½n.");   
 		     } 	 		 
 }//fin ver empleados
  
