@@ -28,7 +28,7 @@ JTextField sal=new JTextField(10);
 JTextField com=new JTextField(10);
 // una lista desplegable para el departamento
 Choice listadepar = new Choice();
-JLabel nomdep=new JLabel("----")rewrewr;
+JLabel nomdep=new JLabel("----");
 String [] nombredepart=new String[50];
 String nombredep;
 
